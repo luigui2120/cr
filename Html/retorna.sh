@@ -86,21 +86,19 @@ echo -e -n "${verde}
       └══════════┘
 "${blanco}
 echo -e -n "${yellow}
-╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-┃$grn [12] $yellow Copiar el html o texto                                                           ┃
-┃$grn [13] $yellow Mover el html o texto                                                            ┃   
-┃$grn [14] $yellow Copiar carpeta                                                                   ┃
-┃$grn [15] $yellow Mover carpeta                                                                    ┃  
-┃$grn [16] $yellow Eliminar archivo o carpeta                                                       ┃
-┃$grn [17] $yellow Descargar Imagenes                                                               ┃
-┃$grn [18] $yellow Imprimir el codigo de la url en la terminal                                      ┃
-┃$grn [19] $yellow Sacar la información del encabezado de un sitio web HTTP                         ┃
-┃$grn [20] $yellow Obtener más información del sitio web                                            ┃
-┃$grn [21] $yellow Almacenar cookies de sitio web                                                   ┃
-┃$grn [22] $yellow Acceder a los archivos que han sido modificados después de un tiempo del html    ┃
-┃$grn [23] $yellow Retornar al inicio                                                               ┃
-┃                      $blanco HELP / OPTIONS                                               $yellow    ┃
-╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝$yellow
+$grn [12] $yellow Copiar el html o texto                                                           
+$grn [13] $yellow Mover el html o texto                                                               
+$grn [14] $yellow Copiar carpeta                                                                   
+$grn [15] $yellow Mover carpeta                                                                      
+$grn [16] $yellow Eliminar archivo o carpeta                                                      
+$grn [17] $yellow Descargar Imagenes                                                              
+$grn [18] $yellow Imprimir el codigo de la url en la terminal                                      
+$grn [19] $yellow Sacar la información del encabezado de un sitio web HTTP                         
+$grn [20] $yellow Obtener más información del sitio web                                            
+$grn [21] $yellow Almacenar cookies de sitio web                                                   
+$grn [22] $yellow Acceder a los archivos que han sido modificados después de un tiempo del html    
+$grn [23] $yellow Retornar al inicio                                                               
+                      $blanco HELP / OPTIONS                                              
 "${blanco}                  
 
 echo -e -n "${rojo}
@@ -270,6 +268,8 @@ echo -e "\e[1;31m┌─[\e[0m""\e[1;37mIngresa el url de la pagina:\e[0m""\e[1;3
 ;;
 24)
 bannerExit
+exit
+clear
 ;;
   HELP|help)
      echo "hola senores"
