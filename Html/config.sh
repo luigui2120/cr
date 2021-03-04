@@ -270,29 +270,75 @@ printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;77m %s\e[0m\n" $link
 payload_ngrok
 checkfound
 }
-
+#-----------------
+red='\033[1;31m'
+rset='\033[0m'
+grn='\033[1;32m'
+orange='\033[40m'
+ylo='\033[1;33m'
+blue='\033[1;34m'
+cyan='\033[1;36m'
+pink='\033[1;35m'
+Gris='\033[0;37m'
+cyan='\e[0;36m'
+lightcyan='\e[96m'
+green='\e[0;32m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+blue='\e[1;34m'
+Escape="\033";
+white="${Escape}[0m";
+GreenF="${Escape}[32m";
+LighGreenF="${Escape}[92m"
+YellowF="${Escape}[33m";
+BlueF="${Escape}[34m";
+CyanF="${Er5scape}[36m";
+Reset="${Escape}[0m";
+pe='\033[0;35m'
+negro="\e[1;30m"
+azul="\e[1;34m"
+verde="\e[1;32m"
+cian="\e[1;36m"
+rojo="\e[1;31m"
+purpura="\e[1;35m"
+amarillo="\e[1;33m"
+blanco="\e[1;37m"
 start1() {
 if [[ -e sendlink ]]; then
 rm -rf sendlink
 fi
 echo '	
-╔███╗  ╔███╗ ╔█████╗ ╔██████╗  ╔███████╗   
-║██║║██║║██║ ██╔══██╗║██║  ║██ ║██╔════
-║██║║██║║██║ ███████║║██║  ║██ ║███████║
-║██║╚══╝║██║ ██╔══██║║██║  ║██ ║██╔════  
-║██║    ║██║ ██║  ██║║██████║  ║███████║    
-╚══╝    ╚══╝ ╚═╝  ╚═╝╚══════╝  ╚═══════╝V2.3
+╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
+┃ ╔███╗  ╔███╗ ╔█████╗ ╔██████╗  ╔███████╗     ┃
+┃ ║██║║██║║██║ ██╔══██╗║██║  ║██ ║██╔════      ┃
+┃ ║██║║██║║██║ ███████║║██║  ║██ ║███████║     ┃ 
+┃ ║██║╚══╝║██║ ██╔══██║║██║  ║██ ║██╔════      ┃
+┃ ║██║    ║██║ ██║  ██║║██████║  ║███████║     ┃
+┃ ╚══╝    ╚══╝ ╚═╝  ╚═╝╚══════╝  ╚═══════╝V2.3 ┃
+╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 '| lolcat -a -d 4
-echo ''
-echo ''
-printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Tunnel\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m Localhost\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m]\e[0m\e[1;93m Volver al Inicio\e[0m\n"
+echo -e -n "${verde}
+        ┌═══════════════┐
+        █${blanco}  AUTOR LUIGUI${verde} █
+        └═══════════════┘
+"${blanco}
+color 
+echo -e -n "${yellow}
+╔━━━━━━━━━━━━━━━━━━━━━━━━━╗    ╔━━━━━━━━━━━━━━━━━━━━━━━━╗${yellow}
+┃ $grn [1] $blanco Tunnel            ${yellow}┃    ┃ $grn [2] $blanco Ngrok            ${yellow}┃
+╔━━━━━━━━━━━━━━━━━━━━━━━━━╗    ╔━━━━━━━━━━━━━━━━━━━━━━━━╗${yellow}   
+┃ $grn [3] $blanco Localhost         ${yellow}┃    ┃ $grn [4] $blanco Volver al Inicio ${yellow}┃
+╚━━━━━━━━━━━━━━━━━━━━━━━━━╝    ╚━━━━━━━━━━━━━━━━━━━━━━━━╝${yellow}
+"${blanco}  
 default_option_server="1"
-echo -e "\e[1;31m┌─[\e[0m""\e[1;37mIngresa opcion:\e[0m""\e[1;31m]\e[0m"
-read -p $'\e[1;31m└──╼\e[0m\e[1;92m '  option_server
+echo -e -n "${rojo}
+     ┌═══════════════┐
+     █${blanco}Ingresa opcion${rojo} █
+     └═══════════════┘
+"${blanco}
+read -p $'\e[1;31m     └──╼\e[0m\e[1;92m '  option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 echo -e "\e[1;31m┌─[\e[0m""\e[1;37mIngresa el nombre de la carpeta:\e[0m""\e[1;31m]\e[0m" 
