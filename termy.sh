@@ -67,7 +67,7 @@ fi
 # Verifica si esta instaldo o lo va instalar
 which curl > /dev/null 2>&1
 if [ "$?" -eq "0" ]; then
-echo -e $yellow "[ ✔ ] curl ................${green}[ Encontrado ]"
+echo -e $yellow "[ ✔ ] curl ...............${green}[ Encontrado ]"
 which curl > /dev/null 2>&1
 sleep 3
 else
@@ -370,20 +370,18 @@ echo -e -n "${verde}
       └══════════┘
 "${blanco}
 echo -e -n "${yellow}
-╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-┃$grn [1] $yellow Copiar el interfast de una pagina html                    ┃
-┃$grn [2] $yellow Copiar una pagina completa de html vulnerando robot       ┃
-┃$grn [3] $yellow Copiar html aun con restricciones                         ┃ 
-┃$grn [4] $yellow Copiar html con limite de velocidad para no ser detectado ┃
-┃$grn [5] $yellow Verificar el texto o Html                                 ┃
-┃$grn [6] $yellow Ver linia de codigo                                       ┃
-┃$grn [7] $yellow Modificar Html o texto                                    ┃
-┃$grn [8] $yellow Crear texto o Html                                        ┃ 
-┃$grn [9] $yellow Simulador de pagina web                                   ┃ 
-┃$grn [10] $yellow Enviar al correo gmail                                   ┃
-┃$grn [11] $yellow Mas Opciones                                             ┃ 
-┃$grn [24] $yellow Exit                                                     ┃
-╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
+$grn [1] $yellow Copiar el interfast de una pagina html                    
+$grn [2] $yellow Copiar una pagina completa de html vulnerando robot       
+$grn [3] $yellow Copiar html aun con restricciones                          
+$grn [4] $yellow Copiar html con limite de velocidad para no ser detectado 
+$grn [5] $yellow Verificar el texto o Html                                 
+$grn [6] $yellow Ver linia de codigo                                       
+$grn [7] $yellow Modificar Html o texto                                    
+$grn [8] $yellow Crear texto o Html                                         
+$grn [9] $yellow Simulador de pagina web                                    
+$grn [10] $yellow Enviar al correo gmail                                   
+$grn [11] $yellow Mas Opciones                                              
+$grn [24] $yellow Exit                                                     
 "${blanco}  
 
   echo -e "\e[1;31m┌─[\e[0m""\e[1;37mIngresa opcion:\e[0m""\e[1;31m]\e[0m"
